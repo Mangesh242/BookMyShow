@@ -1,13 +1,10 @@
 package org.example.bookmyshow.models;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import lombok.Data;
 
-@Data
 @Entity
-public class Movies {
-    @Id
-    private int id;
+public class Region extends BaseModel{
     private String name;
+    //No need to keep all the theater within region
+
 }
