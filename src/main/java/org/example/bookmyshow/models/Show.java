@@ -12,21 +12,22 @@ import java.util.List;
 @Entity
 public class Show extends BaseModel{
     //Show and movie
-    //1 1
-    @OneToOne
+    //M 1
+    @ManyToOne
     private Movie movie;
+
     private Date startTime;
     private int duration;
-
-    @OneToOne
-    private Screen screen;
+    //Show and Screen
+    //1 M
+    @OneToMany
+    private List<Screen> screen;
     //Show and ShowSeat
     //M : M
     @OneToMany
     private List<ShowSeat> showSeats;
 
     //Show and showseatType
-    //
     @OneToMany
     private List<ShowSeatType> showSeatTypes;
 }

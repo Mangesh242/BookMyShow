@@ -22,5 +22,6 @@ public class Movie extends BaseModel {
      //Movie and Actor
     // 1 M No need to give cardanility
      private List<String> actors;
+
      private List<Language> languages;
 }

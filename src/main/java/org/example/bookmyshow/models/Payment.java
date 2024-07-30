@@ -1,6 +1,7 @@
 package org.example.bookmyshow.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -16,5 +17,6 @@ public class Payment extends BaseModel {
     private PaymentGateway paymentGateway;
     private PaymentStatus paymentStatus;
     private PaymentMode paymentMode;
+    @ManyToOne
     private Booking booking;
 }

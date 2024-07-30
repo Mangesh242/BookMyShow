@@ -15,8 +15,8 @@ public class Screen extends BaseModel{
     @OneToMany
     private List<Seat> seats;
     //Screen and Theater
-    // 1 1
-    @OneToOne
+    // M 1
+    @ManyToOne
     private Theatre theatre;
     //Screen and Features
     // 1  M

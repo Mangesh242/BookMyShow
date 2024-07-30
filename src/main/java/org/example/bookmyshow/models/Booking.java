@@ -21,7 +21,6 @@ public class Booking extends BaseModel{
     private int amount;
     //Booking and payments
     //1 M
-
     @OneToMany
     private List<Payment> payments;
     //Booking M  1 User

@@ -1,6 +1,7 @@
 package org.example.bookmyshow.models;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,7 +16,8 @@ public class Theatre extends BaseModel{
     //private List<Screen> list;
     //User does not selects screens
 
-
+    //1 Theater 1 Region
+    //M : 1
     private Region region;
 }
 
